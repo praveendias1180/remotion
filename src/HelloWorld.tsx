@@ -33,10 +33,11 @@ const Title: React.FC = () => {
         fontWeight: 800,
         color: "white",
         opacity,
+        marginLeft: 100,
         transform: `translateY(${translateY}px)`,
       }}
     >
-      Hello, Gravity
+      Hello, Praveen
     </h1>
   );
 };
@@ -53,9 +54,9 @@ const Badge: React.FC = () => {
   return (
     <div
       style={{
-        marginTop: 40,
-        marginLeft: 60,
-        padding: "16px 32px",
+        margin: 100,
+        marginTop: 400,
+        padding: "160px 32px",
         borderRadius: 999,
         background: "rgba(255,255,255,0.15)",
         color: "white",
@@ -64,7 +65,7 @@ const Badge: React.FC = () => {
         transform: `scale(${scale})`,
       }}
     >
-      frame-by-frame ✨
+      Remotion ✨
     </div>
   );
 };
