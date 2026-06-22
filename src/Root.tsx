@@ -2,6 +2,7 @@
 // entry in the Studio sidebar and a render target on the CLI.
 import { Composition } from "remotion";
 import { HelloWorld } from "./HelloWorld";
+import { ShredAd } from "./ShredAd";
 
 export const RemotionRoot: React.FC = () => {
   return (
@@ -13,6 +14,14 @@ export const RemotionRoot: React.FC = () => {
         fps={30}
         width={1920}
         height={1080}
+      />
+      <Composition
+        id="ShredAd"             // the Meta mobile ad
+        component={ShredAd}
+        durationInFrames={450}   // 450 / 30fps = 15 seconds
+        fps={30}
+        width={1080}             // 9:16 vertical (mobile / Reels / Stories)
+        height={1920}
       />
     </>
   );
